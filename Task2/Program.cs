@@ -25,7 +25,7 @@ void FindElement(int[,] array)
     Console.WriteLine("введите номер столбца искомого элемента: ");
     int columnToFind = int.Parse(Console.ReadLine());
     object element = 0;
-    if (rowToFind > rows && columnToFind > columns)
+    if (rowToFind > rows || columnToFind > columns)
         Console.WriteLine("такого числа нет");
     else
     {
